@@ -59,19 +59,19 @@
         <br />
         <form class="Formulario">
           <label for="Email">Email: </label>
-          <input type="email" name="Email" />
+          <input type="email" name="Email" required />
 
           <label for="Password">Contraseña: </label>
-          <input type="password" name="Password" />
+          <input type="password" name="Password" required />
 
           <label for="Nombre-y-apellido">Nombre y Apellido: </label>
-          <input type="text" name="Name-and-lastname" />
+          <input type="text" name="Name-and-lastname" required />
 
           <label for="Fecha-nacimiento">Fecha de nacimiento</label>
-          <input type="date" />
+          <input type="date" required />
 
           <label for="Telefono">Teléfono: </label>
-          <input type="tel" name="Teléfono" placeholder="+34" />
+          <input type="tel" name="Teléfono" placeholder="+34" required />
 
           <label for="Tipo_de_artista">Tipo de artista: </label>
           <select name="Tipo_de_artista" id="Tipo_de_artista">
@@ -79,6 +79,7 @@
             <option value="Amateur">Amateur - 19.99€/mes</option>
             <option value="Consolidado">Consolidado - 49.99€/mes</option>
             <option value="Profesional">Profesional (Marcar casilla)</option>
+            required
           </select>
           <span class="midline">
             <label for="profesional">Profesional - 99.99€/mes</label>
@@ -94,6 +95,7 @@
             autocomplete="cc-number"
             maxlength="19"
             placeholder="xxxx xxxx xxxx xxxx"
+            required
           />
           <span class="midline">
             <label for="CVC">CVC:</label>
@@ -105,19 +107,20 @@
               autocomplete="CVC"
               maxlength="3"
               placeholder="***"
+              required
             />
             <label for="Expiracion">Fecha de Expiración:</label>
-            <input type="date" />
+            <input type="date" required />
           </span>
           <label for="Facturacion">Dirección de facturación:</label>
-          <input type="text" name="BillingAdress" />
+          <input type="text" name="BillingAdress" required />
         </form>
         <button type="button" class="button2">
             Registrate!
           </button>
         <div class="privacidad">
           <label for="privacidad">Acepto la política de privacidad</label>
-          <input type="checkbox" name="privacidad" id="privacidad" checked />
+          <input type="checkbox" name="privacidad" id="privacidad" required />
         </div>
       </main>
       <br />
