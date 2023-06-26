@@ -157,44 +157,56 @@ img:nth-of-type(5) {
 .button1 {
   background-color: white;
   color: black;
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
 }
 
 .button1:hover {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
 .button2 {
   background-color: white;
   color: black;
-  border: 2px solid #008CBA;
+  border: 2px solid #008cba;
 }
 
 .button2:hover {
-  background-color: #008CBA;
+  background-color: #008cba;
   color: white;
 }
-
 
 /* --------------> FORMULARIO <----------------- */
 
 .privacidad {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0.5rem;
 }
 
 .Formulario {
-    width: 500px;
-    background-color: rgba(255, 255, 255, 0.524);
-    display: flex;
-    flex-direction: column;
-
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.524);
+  display: flex;
+  flex-direction: column;
 }
 
 .edad {
+  width: 100px;
+}
 
-    width: 100px;
+/* --------------> TABLA <----------------- */
+
+.precios {
+  width: 450px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.524);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 30px;
+  border-color: black;
+  border-width: 3px;
 }
