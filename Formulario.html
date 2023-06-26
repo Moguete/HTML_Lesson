@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="SKV Estudio" />
+    <meta
+      property="og:url"
+      content="/Users/estevemogas/git_start/HTML_Lesson/Index.html"
+    />
+    <meta property="og:description" content="Página oficial de SKV Estudio" />
+    <meta property="og:author" content="Esteve Mogas" />
+    <title>SKV Estudio</title>
+    <link
+      rel="icon"
+      href="favicon_micro.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="/favicon_micro.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <script src="script.js"></script>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="mainsection">
+      <header>
+        <h2>SKV Estudio</h2>
+        <figure>
+          <a href="Index.html">
+            <img
+              src="logo png SKV copia 2.png"
+              width="311"
+              height="90"
+              alt="Logo SKV Estudio"
+            />
+            <figcaption><em>Tu Estudio de confianza</em></figcaption>
+          </a>
+        </figure>
+        <button class="button button1" type="button">Redes Sociales</button>
+      </header>
+      <nav id="navbar_principal" class="sidebar">
+        <hr />
+        <ul class="navbar">
+          <li><a href="El_Estudio">El Estudio</a></li>
+          <li><a href="Los_Artistas">Los Artistas</a></li>
+          <li><a href="SKV_Records">SKV Records</a></li>
+          <li><a href="Contacto">Contacto</a></li>
+        </ul>
+        <hr />
+      </nav>
+
+      <main>
+        <br />
+        <br />
+        <form class="Formulario">
+          <label for="Nombre">Nombre: </label>
+          <input type="text" name="Nombre" />
+
+          <label for="AKA">AKA: </label>
+          <input type="text" name="AKA" />
+
+          <label for="Poblacion">Población: </label>
+          <input type="text" name="Poblacion" />
+
+          <label for="Genero">Género musical: </label>
+          <input type="text" name="Genero" />
+
+          <span class="edad">
+            <label for="Edad">Edad: </label>
+            <input type="range" name="Edad" width="30" />
+          </span>
+
+          <label for="Fecha">Fecha de reserva</label>
+          <input type="datetime-local" />
+        </form>
+        <div class="privacidad">
+          <label for="privacidad">Acepto la política de privacidad</label>
+          <input type="checkbox" name="privacidad" id="privacidad" checked />
+        </div>
+      </main>
+      <br />
+
+      <footer>
+        <h3>SKV Estudio</h3>
+        <a
+          href="https://www.instagram.com/skv.estudio/"
+          target="_blank"
+          rel="Instagram Oficial SKV"
+          ><img
+            src="logo png SKV copia 2.png"
+            width="100"
+            height="40"
+            alt="Enlace a redes sociales"
+          />
+        </a>
+        <aside>
+          <p><sub>"2023 - all rights reserved"</sub></p>
+        </aside>
+      </footer>
+    </div>
+  </body>
+</html>
