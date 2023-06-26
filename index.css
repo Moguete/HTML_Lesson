@@ -65,16 +65,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 .ven_a_grabar {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  width: 1200px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 150px;
+  border-color: black;
+  border-width: 2px;
 }
 
 /* fake carrousel */
@@ -209,4 +213,38 @@ img:nth-of-type(5) {
   border-radius: 30px;
   border-color: black;
   border-width: 3px;
+  color: black;
+}
+
+.precios1 {
+  width: 1200px;
+  height: 400px;
+  background-color: rgba(45, 45, 45, 0.625);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-color: black;
+  border-width: 3px;
+  align-items: center;
+}
+
+/* --------------> UTIL <----------------- */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 1000;
+}
+
+.midline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }

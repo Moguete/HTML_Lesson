@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="SKV Estudio" />
+    <meta
+      property="og:url"
+      content="/Users/estevemogas/git_start/HTML_Lesson/Index.html"
+    />
+    <meta property="og:description" content="Página oficial de SKV Estudio" />
+    <meta property="og:author" content="Esteve Mogas" />
+    <title>SKV Estudio</title>
+    <link
+      rel="icon"
+      href="favicon_micro.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="/favicon_micro.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <script src="script.js"></script>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="mainsection">
+      <header>
+        <h2>SKV Estudio</h2>
+        <figure>
+          <a href="Index.html">
+            <img
+              src="logo png SKV copia 2.png"
+              width="311"
+              height="90"
+              alt="Logo SKV Estudio"
+            />
+            <figcaption><em>Tu Estudio de confianza</em></figcaption>
+          </a>
+        </figure>
+        <button class="button button1" type="button">Redes Sociales</button>
+      </header>
+      <nav id="navbar_principal" class="sidebar">
+        <hr />
+        <ul class="navbar">
+          <li><a href="El_Estudio">El Estudio</a></li>
+          <li><a href="Los_Artistas">Los Artistas</a></li>
+          <li><a href="SKV_Records">SKV Records</a></li>
+          <li><a href="Contacto">Contacto</a></li>
+        </ul>
+        <hr />
+      </nav>
+
+      <main>
+        <br />
+        <br />
+        <form class="Formulario">
+          <label for="Email">Email: </label>
+          <input type="email" name="Email" />
+
+          <label for="Password">Contraseña: </label>
+          <input type="password" name="Password" />
+
+          <label for="Nombre-y-apellido">Nombre y Apellido: </label>
+          <input type="text" name="Name-and-lastname" />
+
+          <label for="Fecha-nacimiento">Fecha de nacimiento</label>
+          <input type="date" />
+
+          <label for="Telefono">Teléfono: </label>
+          <input type="tel" name="Teléfono" placeholder="+34" />
+
+          <label for="Tipo_de_artista">Tipo de artista: </label>
+          <select name="Tipo_de_artista" id="Tipo_de_artista">
+            <option value="Recreacional">Recreacional - Gratis</option>
+            <option value="Amateur">Amateur - 19.99€/mes</option>
+            <option value="Consolidado">Consolidado - 49.99€/mes</option>
+            <option value="Profesional">Profesional (Marcar casilla)</option>
+          </select>
+          <span class="midline">
+            <label for="profesional">Profesional - 99.99€/mes</label>
+            <input type="checkbox" name="profesional" id="profesional" />
+          </span>
+
+          <label for="Tarjeta_Pago">Tarjeta de Crédito/Débito: </label>
+          <input
+            id="ccn"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{13,19}"
+            autocomplete="cc-number"
+            maxlength="19"
+            placeholder="xxxx xxxx xxxx xxxx"
+          />
+          <span class="midline">
+            <label for="CVC">CVC:</label>
+            <input
+              id="ccn"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{3}"
+              autocomplete="CVC"
+              maxlength="3"
+              placeholder="***"
+            />
+            <label for="Expiracion">Fecha de Expiración:</label>
+            <input type="date" />
+          </span>
+          <label for="Facturacion">Dirección de facturación:</label>
+          <input type="text" name="BillingAdress" />
+        </form>
+        <button type="button" class="button2">
+            Registrate!
+          </button>
+        <div class="privacidad">
+          <label for="privacidad">Acepto la política de privacidad</label>
+          <input type="checkbox" name="privacidad" id="privacidad" checked />
+        </div>
+      </main>
+      <br />
+
+      <footer>
+        <h3>SKV Estudio</h3>
+        <a
+          href="https://www.instagram.com/skv.estudio/"
+          target="_blank"
+          rel="Instagram Oficial SKV"
+          ><img
+            src="logo png SKV copia 2.png"
+            width="100"
+            height="40"
+            alt="Enlace a redes sociales"
+          />
+        </a>
+        <aside>
+          <p><sub>"2023 - all rights reserved"</sub></p>
+        </aside>
+      </footer>
+    </div>
+  </body>
+</html>
