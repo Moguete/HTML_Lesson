@@ -33,10 +33,23 @@ footer {
 .navbar {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   height: 12px;
+  background-color: black;
+  height: 50px;
+  align-content: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar1 {
+  color: white;
+}
+
+.navbar2 {
+  color: grey;
 }
 
 body {
@@ -53,6 +66,7 @@ a:hover {
 
 a {
   color: rgb(0, 0, 0);
+  text-decoration: none !important;
 }
 
 .mainsection {
@@ -248,4 +262,64 @@ img:nth-of-type(5) {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+/* ---------------------------> DROPDOWN NAVBAR <-------------------------- */
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(40, 40, 40, 0.2);
+  z-index: 1;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: grey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: grey;
 }
