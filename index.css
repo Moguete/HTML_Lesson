@@ -1,6 +1,16 @@
+:root {
+  --maincolor: black;
+
+  --maincolor2: grey;
+
+  --maincolor3: rgb(167, 167, 167);
+
+  --maincolor4: white;
+}
+
 header {
   border: 0px solid red;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--maincolor);
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -10,7 +20,7 @@ header {
 
 main {
   border: 2px solid black;
-  background-color: rgb(102, 102, 102);
+  background-color: var(--maincolor2);
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -35,11 +45,10 @@ footer {
 }
 
 .navobj {
-
-    width: 100% ;
-    height: 250px ;
-    overflow="hidden" ;
-    background-color: black;
+  width: 100%;
+  height: 250px;
+  overflow: "hidden";
+  background-color: black;
 }
 
 .navbar {
@@ -48,7 +57,7 @@ footer {
   gap: 50px;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: var(--maincolor);
   height: 50px;
   align-content: center;
   font-size: 20px;
@@ -57,11 +66,11 @@ footer {
 }
 
 .navbar1 {
-  color: white;
+  color: var(--maincolor4);
 }
 
 .navbar2 {
-  color: grey;
+  color: var(--maincolor2);
 }
 
 body {
@@ -86,7 +95,7 @@ a {
 }
 
 .Artistas {
-  background-color: rgb(176, 176, 176);
+  background-color: var(--maincolor3);
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -280,7 +289,7 @@ img:nth-of-type(5) {
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #000000;
+  background-color: var(--maincolor);
   color: white;
   padding: 16px;
   font-size: 20px;
@@ -296,6 +305,7 @@ img:nth-of-type(5) {
 .dropdown {
   position: relative;
   display: inline-block;
+  
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -336,43 +346,40 @@ img:nth-of-type(5) {
   background-color: grey;
 }
 
-
-
-
 /* --------------------- CARD -------------------------- */
 
-.tarjeta{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:420px;
-    border: 1px solid lightgray;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius:15px;
-    font-family: sans-serif;
-  }
-  .titulo{
-    font-size: 24px;
-    padding: 10px 10px 0 10px;;
-  }
-  .cuerpo{
-    padding: 10px;
-  }
-  .pie{
-    background: #6699ff;
-    border-radius:0 0 15px 15px;
-    padding: 10px;
-    text-align:center;
-  }
-  .pie a{
-    text-decoration: none;
-    color: white;
-  }
-  .pie a:after {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    content: ""
-  }
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 420px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+.titulo {
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+}
+.cuerpo {
+  padding: 10px;
+}
+.pie {
+  background: #6699ff;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+}
+.pie a {
+  text-decoration: none;
+  color: white;
+}
+.pie a:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
