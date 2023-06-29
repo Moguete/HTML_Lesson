@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    <nav id="navbar_principal" class="sidebar">
-        <hr />
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="SKV Estudio" />
+      <meta
+        property="og:url"
+        content="/Users/estevemogas/git_start/HTML_Lesson/Index.html"
+      />
+      <meta property="og:description" content="Página oficial de SKV Estudio" />
+      <meta property="og:author" content="Esteve Mogas" />
+      <title>SKV Estudio</title>
+      <link
+        rel="icon"
+        href="favicon_micro.ico"
+        type="image/x-icon"
+        sizes="32x32"
+      />
+      <link
+        rel="icon"
+        href="/favicon_micro.ico"
+        type="image/x-icon"
+        sizes="32x32"
+      />
+      <script src="script.js"></script>
+      <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+      <nav id="navbar_principal" class="sidebar">
         <ul class="navbar">
-          <li><a href="El_Estudio">El Estudio</a></li>
-          <li><a href="Los_Artistas">Los Artistas</a></li>
-          <li><a href="SKV_Records">SKV Records</a></li>
-          <li><a href="Contacto">Contacto</a></li>
+          <li><a href="Index.html" class="navbar1">SKV</a></li>
+          <li><a href="El_Estudio" class="navbar1">El Estudio</a></li>
+          <li class="dropdown">
+            <button class="dropbtn">Los Artistas</button>
+            <div class="dropdown-content">
+              <a href="FatMarron">Fat Marron</a>
+              <a href="Zereon">Zereon</a>
+              <a href="Chelito">Chelito</a>
+              <a href="Meyn">Meyn</a>
+            </div>
+          </li>
+          <li><a href="SKV_Records" class="navbar2">SKV Records</a></li>
+          <li><a href="Contacto" class="navbar2">Contacto</a></li>
+          <li><input type="text" name="Search" placeholder="Buscar" /></li>
+          <button type="button" class="button1">Buscar!</button>
         </ul>
-        <hr />
       </nav>
+    </body>
+  </html>
+</html>
