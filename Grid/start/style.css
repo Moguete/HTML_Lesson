@@ -1,0 +1,84 @@
+:root {
+  --color1: rgb(55, 55, 55);
+  --color2: rgb(170, 170, 170);
+  --color3: rgb(220, 220, 220);
+  --color4: rgb(255, 82, 82);
+  --color5: rgb(114, 114, 114);
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: 25px 30px 30px 30px 30px 30px;
+  width:fit-content;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px;
+
+}
+
+.display {
+  background-color: var(--color1);
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-right: 5px;
+}
+
+.boton {
+  background-color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid;
+  border-color: var(--color5);
+}
+
+.division{
+    background-color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num {
+  background-color: var(--color3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-color: var(--color5);
+}
+
+.num0 {
+    background-color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-color: var(--color5);
+    border-bottom-left-radius: 10px;
+  }
+
+.igual {
+  background-color: var(--color4);
+  grid-row-start: 3;
+  grid-row-end: 7;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid;
+  border-color: var(--color5);
+  border-bottom-right-radius: 10px;
+}
