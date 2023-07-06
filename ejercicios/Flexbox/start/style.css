@@ -1,0 +1,53 @@
+:root {
+  --maincolor1: grey;
+  --maincolor2: black;
+  --maincolor3: white;
+  --linkcolor1: #2b2b2b;
+  --linkcolor2: #2b2bb2;
+}
+
+body {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.sidebar {
+  background-color: var(--maincolor1);
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linklist {
+  flex: 1;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.navbar_link{
+    color: var(--linkcolor1);
+}
+
+.navbar_link:hover{
+    color: var(--linkcolor2);
+    transition: 0,3s ease-in-out;
+}
