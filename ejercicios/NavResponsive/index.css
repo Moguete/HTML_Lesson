@@ -130,6 +130,14 @@ a {
   color: white;
 }
 
+.menu {
+  display: flex;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 3px;
+}
+
 /* ---------------------------> DROPDOWN NAVBAR <-------------------------- */
 
 /* Style The Dropdown Button */
