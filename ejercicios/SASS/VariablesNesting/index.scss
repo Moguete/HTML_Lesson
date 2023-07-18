@@ -1,0 +1,37 @@
+$color1: green;
+$color2: blue;
+$color3: red;
+
+body {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 20px;
+  padding: 20px;
+
+  p {
+    display: flex;
+    text-decoration: underline $color2 1px;
+    font-size: 30px;
+    color: $color1;
+    justify-content: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 150px;
+    p {
+      border: 1px solid $color1;
+      display: flex;
+      align-items: center;
+      color: $color2;
+      text-decoration: none;
+    }
+
+    span {
+        color: $color3;
+    }
+  }
+}
