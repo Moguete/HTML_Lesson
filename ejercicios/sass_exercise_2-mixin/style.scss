@@ -1,6 +1,5 @@
-$color-green: green;
-$color-red: red;
-$color-blue: blue;
+@use "colors.scss";
+@use "function.scss";
 
 @mixin center-flex($column) {
   display: flex;
@@ -23,18 +22,18 @@ $color-blue: blue;
 
 body {
   @include center-flex(column);
-  @include border-color($color-red);
+  @include border-color(colors.$color-red);
   @include padding(10px);
   width: 100vw;
   h1 {
-    color: $color-green;
-    text-decoration: underline $color-blue 1px;
+    color: colors.$color-green;
+    text-decoration: underline colors.$color-blue 1px;
   }
 }
 
 div {
   @include center-flex(column);
-  gap: 1rem;
+  gap: function.rem(16);
 }
 
 section {
@@ -43,18 +42,18 @@ section {
 }
 
 article {
-  @include border-color($color-green);
+  @include border-color(colors.$color-green);
   @include padding(5px);
   @include center-flex(column);
   width: 100vw;
   height: 7rem;
   p {
-    @include text-color($color-blue);
+    @include text-color(colors.$color-blue);
     text-align: center;
-    font-size: 1rem;
+    font-size: function.rem(16);
   }
   .p2 {
-    @include text-color($color-red);
+    @include text-color(colors.$color-red);
   }
 }
 
@@ -62,8 +61,8 @@ article {
   @include center-flex(row);
   width: 100vw;
   p {
-    @include text-color($color-green);
+    @include text-color(colors.$color-green);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: function.rem(24);
   }
 }
