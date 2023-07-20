@@ -1,0 +1,75 @@
+@use "colors.scss";
+@use "function.scss";
+
+@mixin center-flex($column) {
+  display: flex;
+  flex-direction: $column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin border-color($bcolor) {
+  border: 1px solid $bcolor;
+}
+
+@mixin padding($paddingpx) {
+  padding: $paddingpx;
+}
+
+@mixin text-color($tcolor) {
+  color: $tcolor;
+}
+
+body {
+  @include center-flex(column);
+  @include border-color(colors.$color-red);
+  @include padding(10px);
+  width: 100vw;
+  h1 {
+    color: colors.$color-green;
+    text-decoration: underline colors.$color-blue 1px;
+  }
+  h2 {
+    @extend h1;
+    @include border-color(colors.$color-red);
+    text-decoration: none;
+    padding: function.rem(16);
+  }
+}
+
+div {
+  @include center-flex(column);
+  gap: function.rem(16);
+}
+
+section {
+  @include center-flex(row);
+  width: 100vw;
+}
+
+article {
+  @include border-color(colors.$color-green);
+  @include padding(5px);
+  @include center-flex(column);
+  width: 100vw;
+  height: 7rem;
+  p {
+    @include text-color(colors.$color-blue);
+    text-align: center;
+    font-size: function.rem(16);
+  }
+  .p2 {
+    @include text-color(colors.$color-red);
+  }
+}
+
+.footer {
+  @include center-flex(row);
+  width: 100vw;
+  @include border-color(colors.$color-blue);
+  p {
+    @include text-color(colors.$color-green);
+    text-align: center;
+    font-size: function.rem(24);
+  }
+}
