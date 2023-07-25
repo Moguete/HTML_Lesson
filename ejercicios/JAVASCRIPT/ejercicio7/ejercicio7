@@ -1,0 +1,11 @@
+let hello = "Ciao"; // boolean
+let age = 18; // string
+let isGraduated = false; // number
+
+hello = Boolean(hello);
+age = String(age);
+isGraduated = Number(isGraduated);
+
+console.log(hello); // el output es true ya que se convierte a booleano y es una string con cierta información. De ser una string vacia el output sera false.//
+console.log(age);
+console.log(isGraduated);

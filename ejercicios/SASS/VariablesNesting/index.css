@@ -8,7 +8,8 @@ body {
 }
 body p {
   display: flex;
-  text-decoration: underline blue 1px;
+  -webkit-text-decoration: underline blue 1px;
+          text-decoration: underline blue 1px;
   font-size: 30px;
   color: green;
   justify-content: center;
@@ -27,6 +28,4 @@ body .grid p {
 }
 body .grid span {
   color: red;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
