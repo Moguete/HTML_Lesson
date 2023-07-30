@@ -1,4 +1,15 @@
-let pick1 = ["Papi", "Mankita", "gene", "carla"];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamOP</title>
+</head>
+<body>
+    <h1>Bienvenidos al mejor teambuilder de la historia! By: Moguete</h1>
+
+    <script>
+        let pick1 = ["Papi", "Mankita", "gene", "carla"];
 let pick2 = ["candalija", "angel", "DONRAIMON", "zego"];
 let pick3 = ["R1NE", "zackon", "vansii", "thislion"];
 let pick4 = ["Titu", "Eric", "ale", "jonark"];
@@ -13,7 +24,7 @@ var equipoDefinitivoOP = [];
 var freelines = ["top", "jungla", "mid", "adc", "support"];
 var fullfreelines = [top, jung, mid, adc, supp];
 
-//let pickeo = prompt("Introduce tu primer pickeo", "El mas OP, gracias");
+let pickeo = prompt("Introduce tu primer pickeo", "El mas OP, gracias");
 
 function equipoDefinitivo(primerpick) {
   equipoDefinitivoOP.push(primerpick);
@@ -73,26 +84,30 @@ function equipoDefinitivo(primerpick) {
     console.log("Falta por pickear: ", freelines);
     return equipoDefinitivoOP, freelines, fullfreelines;
   }
-  //-------------------adc-----------------
-  else if (adc.includes(primerpick)) {
-    let linepick = "adc";
-    let indexadc = adc.indexOf(primerpick);
-    let indexline = freelines.indexOf(linepick);
-    freelines.splice(indexline, indexline + 1);
-    fullfreelines.splice(indexline, indexline + 1);
-    adc.splice(indexadc, indexadc + 1);
-    console.log("Asi está el equipo: ", equipoDefinitivoOP);
-    console.log("Opciones para el segundo pick: ", pick2);
-    console.log("Los", freelines, "disponibles son: ", fullfreelines);
-    console.log("Falta por pickear: ", freelines);
-    return equipoDefinitivoOP, freelines, fullfreelines;
-  }
+    //-------------------adc-----------------
+    else if (adc.includes(primerpick)) {
+        let linepick = "adc";
+        let indexadc = adc.indexOf(primerpick);
+        let indexline = freelines.indexOf(linepick);
+        freelines.splice(indexline, indexline + 1);
+        fullfreelines.splice(indexline, indexline + 1);
+        adc.splice(indexadc, indexadc + 1);
+        console.log("Asi está el equipo: ", equipoDefinitivoOP);
+        console.log("Opciones para el segundo pick: ", pick2);
+        console.log("Los", freelines, "disponibles son: ", fullfreelines);
+        console.log("Falta por pickear: ", freelines);
+        return equipoDefinitivoOP, freelines, fullfreelines;
+      }
 }
 
-console.log(
-  "Bienvenido a TeamOP, el programa creado por y para Moguete para facilitar la selección de jugadores"
-);
-console.log("Las opciones para tu primer pick son: ", pick1);
+console.log("Bienvenido a TeamOP, el programa creado por y para Moguete para facilitar la selección de jugadores")
+console.log("Las opciones para tu primer pick son: ", pick1)
 console.log("¿Con cual te quedas?");
-
 equipoDefinitivo("Papi");
+equipoDefinitivo("R1NE");
+equipoDefinitivo("candalija");
+
+    </script>
+    
+</body>
+</html>
