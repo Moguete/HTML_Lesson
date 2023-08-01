@@ -1,3 +1,5 @@
-function printName() {
-    console.log()
+function printName(nombre) {
+    console.log(nombre)
 }
+
+printName("Esteve")
