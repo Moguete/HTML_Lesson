@@ -1,11 +1,11 @@
 let pick1 = ["Papi", "Mankita", "gene", "carla"];
 let pick2 = ["candalija", "angel", "DONRAIMON", "zego"];
 let pick3 = ["R1NE", "zackon", "vansii", "thislion"];
-let pick4 = ["Titu", "Eric", "ale", "jonark"];
+let pick4 = ["girbi", "Eric", "ale", "jonark"];
 
-let mid = ["Titu", "ale", "angel"];
-let top = ["R1NE", "zackon", "vansii"];
-let jung = ["vansii", "thislion", "candalija"];
+let mid = ["ale", "angel"];
+let top = ["girbi", "R1NE", "zackon", "vansii"];
+let jung = ["vansii", "thislion", "DONRAIMON", "candalija"];
 let adc = ["Moguete", "jonark"];
 let supp = ["Papi", "carla", "Mankita"];
 
@@ -95,4 +95,9 @@ console.log(
 console.log("Las opciones para tu primer pick son: ", pick1);
 console.log("¿Con cual te quedas?");
 
-equipoDefinitivo("Papi");
+equipoDefinitivo("Papi"); //First pick
+// equipoDefinitivo(""); //Second pick
+// equipoDefinitivo(""); //Third pick
+// equipoDefinitivo(""); //Fourht pick
+// equipoDefinitivo("");
+
