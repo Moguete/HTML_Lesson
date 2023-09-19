@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local storage</h1>
+    <button onclick="guardarDatos()">Guardar Datos</button>
+    <button onclick="recuperarDatos()">Recuperar Datos</button>
+    <button onclick="removeItem()">Borrar Item</button>
+    <button onclick="clearStorage()">Borrar Datos</button>
+
+    <script>
+      const clave = "saludo";
+        
+      const guardarDatos = () => {
+        const key = clave;
+        const value = "hola que tal?";
+
+        localStorage.setItem(key, value);
+      };
+
+      const recuperarDatos = () => {
+        const valor = localStorage.getItem(clave);
+
+        console.log(valor);
+      };
+
+      function removeItem() {
+        localStorage.removeItem(clave);
+      }
+
+      const clearStorage = () => {
+        localStorage.clear();
+      };
+    </script>
+  </body>
+</html>

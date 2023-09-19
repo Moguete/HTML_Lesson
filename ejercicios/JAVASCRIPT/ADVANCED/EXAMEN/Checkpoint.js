@@ -9,4 +9,4 @@ const filtro = (param) => {
 
 const filtrado = filtro(strings);
 
-console.log(filtrado)
+console.log(filtrado);
