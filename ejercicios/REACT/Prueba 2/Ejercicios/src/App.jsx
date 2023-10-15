@@ -3,6 +3,7 @@ import JSX2 from "./ejercicios/2 JSX/2JSX";
 import JSX5 from "./ejercicios/5 JSX/5JSX";
 import "./App.css";
 import HelloWorld from "./ejercicios/7 Components/HelloWorld";
+import Message from "./ejercicios/12 Components/Message";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,8 @@ function App() {
         <HelloWorld />
         <JSX2 name={"Esteve"} />
         <JSX5 a={"10"} b={"5"} />
+        <HelloWorld />
+        <Message />
       </div>
     </>
   );
