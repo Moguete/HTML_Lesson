@@ -4,6 +4,7 @@ import JSX5 from "./ejercicios/5 JSX/5JSX";
 import "./App.css";
 import HelloWorld from "./ejercicios/7 Components/HelloWorld";
 import Message from "./ejercicios/12 Components/Message";
+import Welcome from "./ejercicios/15 Props/Welcome";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
         <JSX5 a={"10"} b={"5"} />
         <HelloWorld />
         <Message />
+        <Welcome name={"Esteve"} />
       </div>
     </>
   );
