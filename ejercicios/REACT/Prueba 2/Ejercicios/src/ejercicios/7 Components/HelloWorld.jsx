@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const HelloWorld = () => {
   return (
-    <h1>Hello, world!</h1>
-    <p>What a beautiful day!</p>
-  )
-}
+    <div>
+      <h1>Hello, world!</h1>
+      <p>What a beautiful day!</p>
+    </div>
+  );
+};
 
-export default HelloWorld
+export default HelloWorld;
