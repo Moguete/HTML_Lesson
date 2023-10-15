@@ -1,10 +1,11 @@
 import React from "react";
 
-const Welcome = ({name}) => {
+const Welcome = ({ name, age }) => {
   return (
-    <p>
-      Welcome, {name}!
-    </p>
+    <div>
+      <p>Welcome, {name}!</p>
+      <p>Your age is {age}</p>
+    </div>
   );
 };
 
