@@ -1,10 +1,11 @@
 import React from "react";
+import Message from "../12 Components/Message";
 
 const HelloWorld = () => {
   return (
     <div>
       <h1>Hello, world!</h1>
-      <p>What a beautiful day!</p>
+      <Message />
     </div>
   );
 };
