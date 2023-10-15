@@ -15,9 +15,7 @@ function App() {
         <HelloWorld />
         <JSX2 name={"Esteve"} />
         <JSX5 a={"10"} b={"5"} />
-        <HelloWorld />
-        <Message />
-        <Welcome name={<HelloWorld />} age={28} />
+        <Welcome name={"Esteve"} age={28} />
       </div>
     </>
   );

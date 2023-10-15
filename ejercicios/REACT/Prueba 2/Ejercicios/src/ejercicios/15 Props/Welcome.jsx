@@ -1,10 +1,11 @@
 import React from "react";
+import Age from "../20 Props/Age";
 
 const Welcome = ({ name, age }) => {
   return (
     <div>
       <p>Welcome, {name}!</p>
-      <p>Your age is {age}</p>
+      <Age age={age} />
     </div>
   );
 };
