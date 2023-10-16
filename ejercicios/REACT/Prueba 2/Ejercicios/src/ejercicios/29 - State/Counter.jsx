@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
-const Counter = () => {
-  const [counter, setCounter] = useState(0);
+const Counter = ({valorInicial, incremento}) => {
+  const [counter, setCounter] = useState(valorInicial);
   function Incrementar() {
-    setCounter(counter + 1);
+    setCounter(counter + incremento);
   }
   return (
     <div>
       <h2>{counter}</h2>
-      <button onClick={Incrementar}>+1</button>
+      <button onClick={Incrementar}>+{incremento}</button>
     </div>
   );
 };

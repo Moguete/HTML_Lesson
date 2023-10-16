@@ -22,7 +22,7 @@ function App() {
         <JSX5 a={"10"} b={"5"} />
         <Welcome name={"Esteve"} age={28} />
         <AlertClock onButtonClick={showCurrentTime} />
-        <Counter />
+        <Counter valorInicial={10} incremento={5}/>
       </div>
     </>
   );
