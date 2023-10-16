@@ -6,6 +6,7 @@ import HelloWorld from "./ejercicios/7 Components/HelloWorld";
 import Message from "./ejercicios/12 Components/Message";
 import Welcome from "./ejercicios/15 Props/Welcome";
 import AlertClock from "./ejercicios/26 Events/AlertClock";
+import Counter from "./ejercicios/29 - State/Counter";
 function App() {
   const [count, setCount] = useState(0);
   const showCurrentTime = () => {
@@ -21,6 +22,7 @@ function App() {
         <JSX5 a={"10"} b={"5"} />
         <Welcome name={"Esteve"} age={28} />
         <AlertClock onButtonClick={showCurrentTime} />
+        <Counter />
       </div>
     </>
   );
