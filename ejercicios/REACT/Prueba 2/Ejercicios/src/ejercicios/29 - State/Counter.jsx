@@ -6,10 +6,18 @@ const Counter = ({valorInicial, incremento}) => {
   function Incrementar() {
     setCounter(counter + incremento);
   }
+  function Restar() {
+    setCounter(counter - incremento);
+  }
+  function Reset() {
+    setCounter(valorInicial);
+  }
   return (
     <div>
       <CounterDisplay count={counter} />
       <button onClick={Incrementar}>+{incremento}</button>
+      <button onClick={Restar}>-{incremento}</button>
+      <button onClick={Reset}>Reset</button>
     </div>
   );
 };
