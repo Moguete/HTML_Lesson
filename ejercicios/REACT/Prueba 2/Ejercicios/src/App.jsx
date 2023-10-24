@@ -11,6 +11,7 @@ import Form from "./pruebas checkpoint/form";
 import ToggleingComponent from "./pruebas checkpoint/toggleingComponent";
 import Clock from "./ejercicios/35 useEffect/Clock";
 import MouseClicker from "./ejercicios/36 Handling Events/MouseClicker";
+import MultiButton from "./ejercicios/40 Handling Events/MultiButton";
 function App() {
   const [count, setCount] = useState(0);
   const showCurrentTime = () => {
@@ -30,6 +31,7 @@ function App() {
         <ToggleingComponent/>
         <Clock/>
         <MouseClicker/>
+        <MultiButton/>
       </div>
     </>
   );
