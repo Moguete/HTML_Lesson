@@ -3,10 +3,13 @@ import React from "react";
 const UncontrolledLogin = () => {
   function handleFormSubmit(e) {
     e.preventDefault();
-    const username = e.target.elements.username.value;
-    const password = e.target.elements.password.value;
-    const data = { username, password };
-    console.log(data);
+    const formData = new FormData(e.target);
+    const data = {
+        username : formData.get('username'),
+        password : formData.get('password'),
+        session : formData.get('session') === 'on' ? true : false,
+    }
+    console.log(data)
   }
   return (
     <form onSubmit={handleFormSubmit}>
