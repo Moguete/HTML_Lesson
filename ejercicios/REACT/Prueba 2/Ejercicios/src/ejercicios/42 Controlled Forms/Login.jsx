@@ -1,51 +1,53 @@
 import { useState } from "react";
 
-const Login = () => {
-    const [formData, setFormData] = useState({
-      username: "",
-      password: "",
-      rememberMe: false,
-    });
-  
-    function handleChange(event) {
-      const { name, value, type, checked } = event.target;
-  
-      setFormData({
-        ...formData,
-        [name]: type === "checkbox" ? checked : value,
-      });
+const Login = ({ onLogin }) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleLoginClick = () => {
+    if (username && password) {
+      onLogin({ username, password });
     }
-    return (
+  };
+
+  const isButtonDisabled = !username && !password;
+  return (
+    <div>
       <div>
-        <label htmlFor="username">usuario:</label>
+        <label htmlFor="username">Username:</label>
         <input
           type="text"
           id="username"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
+          value={username}
+          onChange={handleUsernameChange}
         />
-  
-        <label htmlFor="password">Contraseña:</label>
+      </div>
+      <div>
+        <label htmlFor="password">Password:</label>
         <input
           type="password"
           id="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
+          value={password}
+          onChange={handlePasswordChange}
         />
-  
-        <label>
-          <input
-            type="checkbox"
-            name="rememberMe"
-            checked={formData.rememberMe}
-            onChange={handleChange}
-          />
-          Remember Me!
-        </label>
       </div>
-    );
-  }
+      <label>
+        <input type="checkbox" name="rememberMe" onChange={onLogin} />
+        Remember Me!
+      </label>
+      <button onClick={handleLoginClick} disabled={isButtonDisabled}>
+        Login
+      </button>
+    </div>
+  );
+};
 
-export default Login
+export default Login;
