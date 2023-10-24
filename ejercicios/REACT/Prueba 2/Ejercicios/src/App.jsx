@@ -13,6 +13,7 @@ import Clock from "./ejercicios/35 useEffect/Clock";
 import MouseClicker from "./ejercicios/36 Handling Events/MouseClicker";
 import MultiButton from "./ejercicios/40 Handling Events/MultiButton";
 import InteractiveWelcome from "./ejercicios/41 Controlled Forms/InteractiveWelcome";
+import Login from "./ejercicios/42 Controlled Forms/Login";
 function App() {
   const [count, setCount] = useState(0);
   const showCurrentTime = () => {
@@ -34,6 +35,7 @@ function App() {
         <MouseClicker/>
         <MultiButton/>
         <InteractiveWelcome/>
+        <Login/>
       </div>
     </>
   );
