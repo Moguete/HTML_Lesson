@@ -6,6 +6,7 @@ const MouseClicker = () => {
   }
   function handleImage(e) {
     console.log(e.currentTarget.src);
+    e.stopPropagation();
   }
   return (
     <button name="one" onClick={handleButton}>
