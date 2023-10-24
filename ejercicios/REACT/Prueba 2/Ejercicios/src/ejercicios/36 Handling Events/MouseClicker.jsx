@@ -7,6 +7,7 @@ const MouseClicker = () => {
 
   return (
     <button name="one" onClick={handleButton}>
+        <img width={50} height={50} src="/src/assets/Captura de pantalla 2023-09-06 a las 15.54.00.png" />
       click me!
     </button>
   );
