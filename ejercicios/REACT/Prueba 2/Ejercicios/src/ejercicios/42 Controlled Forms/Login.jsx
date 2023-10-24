@@ -17,6 +17,10 @@ const Login = ({ onLogin }) => {
       onLogin({ username, password });
     }
   };
+  const handleResetClick = () => {
+    setUsername("");
+    setPassword("");
+  };
 
   const isButtonDisabled = !username && !password;
   return (
@@ -46,6 +50,14 @@ const Login = ({ onLogin }) => {
       <button onClick={handleLoginClick} disabled={isButtonDisabled}>
         Login
       </button>
+      <div>
+        <button type="button" onClick={handleResetClick}>
+          Reset
+        </button>
+        <button onClick={handleLoginClick} disabled={isButtonDisabled}>
+          Login
+        </button>
+      </div>
     </div>
   );
 };
