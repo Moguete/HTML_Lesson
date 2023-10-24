@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CounterDisplay from "../32 State/CounterDisplay";
 
-const Counter = ({valorInicial, incremento}) => {
+const Counter = ({ valorInicial, incremento }) => {
   const [counter, setCounter] = useState(valorInicial);
+
+  useEffect(() => {
+    console.log(`El contador está en ${counter}`);
+  }, [counter]);
   function Incrementar() {
     setCounter(counter + incremento);
   }

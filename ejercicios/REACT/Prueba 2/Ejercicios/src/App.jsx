@@ -7,6 +7,8 @@ import Message from "./ejercicios/12 Components/Message";
 import Welcome from "./ejercicios/15 Props/Welcome";
 import AlertClock from "./ejercicios/26 Events/AlertClock";
 import Counter from "./ejercicios/29 - State/Counter";
+import Form from "./pruebas checkpoint/form";
+import ToggleingComponent from "./pruebas checkpoint/toggleingComponent";
 function App() {
   const [count, setCount] = useState(0);
   const showCurrentTime = () => {
@@ -23,6 +25,7 @@ function App() {
         <Welcome name={"Esteve"} age={28} />
         <AlertClock onButtonClick={showCurrentTime} />
         <Counter valorInicial={10} incremento={5}/>
+        <ToggleingComponent/>
       </div>
     </>
   );
