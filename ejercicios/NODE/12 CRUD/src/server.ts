@@ -24,16 +24,45 @@ let planets: Planets = [
 ];
 
 app.use(morgan("dev"));
-app.use(express.json())
+app.use(express.json());
 app.get("/api/planets", (req, res) => {
   res.status(200).json({ planets });
 });
 
 app.get("/api/planets/:id", (req, res) => {
-    const {id} = req.params;
-    const planet = planets.find(p => p.id === Number(id))
-    res.status(200).json(planet);
-  });
+  const { id } = req.params;
+  const planet = planets.find((p) => p.id === Number(id));
+  res.status(200).json(planet);
+});
+
+app.post("/api/planets", (req, res) => {
+  const { id, name } = req.body;
+  const newPlanet = { id, name };
+  planets = [...planets, newPlanet];
+
+  console.log(planets);
+
+  res.status(201).json({ msg: "New planet created" });
+});
+
+app.put("/api/planets/:id", (req, res) => {
+  const { id } = req.params;
+  const { name } = req.body;
+  planets = planets.map((p) => (p.id === Number(id) ? { ...p, name } : p));
+
+  console.log(planets);
+
+  res.status(200).json({ msg: "The planet was updated" });
+});
+
+app.delete("/api/planets/:id", (req, res) => {
+  const { id } = req.params;
+  planets = planets.filter((p) => p.id !== Number(id));
+
+  console.log(planets);
+
+  res.status(200).json({ msg: "The planet was deleted" });
+});
 
 app.listen(port, () => {
   console.log(`App listening on port http://localhost:${port}`);
