@@ -5,7 +5,16 @@ import morgan from "morgan";
 const app = express();
 const port = 3000;
 
-let baseDeDatos = [
+type Usuario = {
+  id: number;
+  name: string;
+  city: string;
+};
+
+type BaseDeDatos = Usuario[];
+
+
+let baseDeDatos : BaseDeDatos = [
   {
     id: 1,
     name: "Marcoski",
