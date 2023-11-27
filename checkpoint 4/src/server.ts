@@ -13,8 +13,7 @@ type Usuario = {
 
 type BaseDeDatos = Usuario[];
 
-
-let baseDeDatos : BaseDeDatos = [
+let baseDeDatos: BaseDeDatos = [
   {
     id: 1,
     name: "Marcoski",
@@ -45,6 +44,43 @@ let baseDeDatos : BaseDeDatos = [
 app.use(morgan("dev"));
 app.use(express.json());
 
+app.get("/checkpoint/", (req, res) => {
+  res.status(200).json(baseDeDatos);
+});
+
+app.get("/checkpoint/:id", (req, res) => {
+  const { id } = req.params;
+  const user = baseDeDatos.find((u) => u.id === Number(id));
+  res.status(200).json(user);
+});
+
+app.post("/checkpoint", (req, res) => {
+  const { id, name, city } = req.body;
+  const newUser = { id, name, city };
+  baseDeDatos = [...baseDeDatos, newUser];
+  res.status(201).json({ msg: "Usuario creado correctamente" });
+
+  console.log(baseDeDatos);
+});
+
+app.put("/checkpoint/:id", (req, res) => {
+  const { id } = req.params;
+  const { name, city } = req.body;
+  baseDeDatos = baseDeDatos.map((u) =>
+    u.id === Number(id) ? { ...u, name, city } : u
+  );
+  res.status(200).json({ msg: "Usuario modificado" });
+
+  console.log(baseDeDatos);
+});
+
+app.delete("/checkpoint/:id", (req, res) => {
+  const { id } = req.params;
+  baseDeDatos = baseDeDatos.filter((u) => u.id !== Number(id));
+  res.status(200).json({ msg: "Usuario borrado" });
+
+  console.log(baseDeDatos);
+});
 app.listen(port, () => {
   console.log(`App listening on port http://localhost:${port}`);
 });
